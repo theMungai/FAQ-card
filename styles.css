@@ -39,8 +39,12 @@ body{
     box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
 }
 
-.image-container{
+.illustration-images{
     width: 40%;
+}
+
+.image-container{
+    width: 100%;
     height: 400px;
     position: relative;
     background: url(images/illustration-woman-online-desktop.svg);
@@ -86,6 +90,10 @@ body{
     color: var(--very-dark-grayish-blue);
 }
 
+.arrow-down{
+    transition: transform 0.5s;
+}
+
 .arrow-up{
     transform: rotate(180deg);
     transition: 0.5s;
@@ -95,9 +103,9 @@ body{
     color: var(--soft-red);
 }
 
-.question:active{
+.question-active p{
     color: var(--very-dark-desaturated-blue);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .answer{
@@ -107,20 +115,189 @@ body{
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    position: relative;
+    top: 30%; 
 }
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* ================ Media Queries ========================= */
+/* ================ Mobile Device ========================= */
+
+@media (max-width : 480px){
+    .main-container{
+        margin: 150px 0px;
+        width: 90%;
+        height: auto;
+        padding: 0px 20px;
+        display: block;
+        padding-bottom: 30px;
+    }
+    
+    .illustration-images{
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .image-container{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -60%;
+        left: 0%;
+        background: url(images/illustration-woman-online-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    
+    .illustration-box{
+        display: none;
+    }
+    
+    .FAQ-container{
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    .header h1{
+        text-align: center;
+    }
+    
+    .question p{
+        width: 95%;
+        font-size: 0.95rem;
+    }
+    
+    .answer{
+        padding-top: 15px;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+}
+
+
+/* ================ Tablet Device ========================= */
+
+@media (min-width : 481px) and (max-width : 767px){
+    .main-container{
+        margin: 150px 0px;
+        width: 90%;
+        height: auto;
+        padding: 0px 20px;
+        display: block;
+        padding-bottom: 30px;
+    }
+    
+    .illustration-images{
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .image-container{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -60%;
+        left: 0%;
+        background: url(images/illustration-woman-online-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    
+    .illustration-box{
+        display: none;
+    }
+    
+    .FAQ-container{
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    .header h1{
+        text-align: center;
+    }
+    
+    .question p{
+        width: 95%;
+        font-size: 1rem;
+    }
+    
+    .answer{
+        padding-top: 15px;
+        font-size: 0.95rem;
+        width: 90%;
+    }
+
+}
+
+/* ================ Laptop Device ========================= */
+
+@media (min-width : 768px) and (max-width : 1199px){
+    .main-container{
+        margin: 150px 0px;
+        width: 60%;
+        height: auto;
+        padding: 0px 20px;
+        display: block;
+        padding-bottom: 30px;
+    }
+    
+    .illustration-images{
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .image-container{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -60%;
+        left: 0%;
+        background: url(images/illustration-woman-online-mobile.svg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    
+    .illustration-box{
+        display: none;
+    }
+    
+    .FAQ-container{
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    .header h1{
+        text-align: center;
+    }
+    
+    .question p{
+        width: 95%;
+        font-size: 1rem;
+    }
+    
+    .answer{
+        padding-top: 15px;
+        font-size: 0.95rem;
+        width: 90%;
+    }
+
 }

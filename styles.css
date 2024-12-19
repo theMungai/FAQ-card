@@ -88,14 +88,14 @@ body{
 
 .arrow-up{
     transform: rotate(180deg);
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .question:hover{
     color: var(--soft-red);
 }
 
-.question:focus{
+.question:active{
     color: var(--very-dark-desaturated-blue);
     font-weight: 500;
 }
